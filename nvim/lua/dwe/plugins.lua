@@ -1,6 +1,5 @@
 -------------------------------------------------
--- DT'S NEOVIM CONFIGURATION
--- Neovim website: https://neovim.io/
+-- DWE'S NEOVIM CONFIGURATION
 -- DT's dotfiles: https://gitlab.com/dwt1/dotfiles
 -------------------------------------------------
 
@@ -32,12 +31,12 @@ packer.startup(function(use)
 		requires = { { "nvim-lua/plenary.nvim" } },
 	})
 	use("nvim-telescope/telescope-file-browser.nvim")
-
 	use("nvim-treesitter/nvim-treesitter") -- Treesitter Syntax Highlighting
-
+    use("ojroques/vim-oscyank") --yank over ssh
 	-- Productivity
 	use("vimwiki/vimwiki")
 	use("jreybert/vimagit")
+    use("tpope/vim-eunuch")
 	use("nvim-orgmode/orgmode")
 
 	use("folke/which-key.nvim") -- Which Key
@@ -57,6 +56,7 @@ packer.startup(function(use)
 	use("kovetskiy/sxhkd-vim")
 	use("vim-python/python-syntax")
 	use("ap/vim-css-color")
+    use("sunjon/shade.nvim")
 
 	-- Junegunn Choi Plugins --
 	use("junegunn/goyo.vim")
